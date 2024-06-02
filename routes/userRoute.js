@@ -10,10 +10,10 @@ const userRouter=express.Router()
 userRouter.get("/",async(req,res)=>{
     try{
 
-    //  const user = await userModel.find()
-    //  res.status(201).send(user)
+     const user = await userModel.find()
+     res.status(201).send(user)
 
-    res.status(201).send("hello")
+    // res.status(201).send("hello")
 
 
     }
