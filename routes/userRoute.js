@@ -11,7 +11,7 @@ userRouter.get("/user",async(req,res)=>{
     try{
 
      const user = await userModel.find()
-     res.status(201).json({user})
+     res.status(201).send(user)
 
 
     }
