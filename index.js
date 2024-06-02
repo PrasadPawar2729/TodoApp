@@ -1,11 +1,13 @@
 const express = require("express");
 const { connection } = require("./config/db");
+const { userRouter } = require("./routes/userRoute");
 
 const app = express()
 
 const port =2021;
 
 app.use(express.json())
+app.use("/user",userRouter)
 
 
 
