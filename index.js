@@ -7,7 +7,7 @@ const app = express()
 const port =2021;
 
 app.use(express.json())
-app.use("/user",userRouter)
+app.use("/",userRouter)
 
 
 
