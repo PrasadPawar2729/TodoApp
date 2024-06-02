@@ -7,7 +7,7 @@ const userRouter=express.Router()
 
 
 //get the user
-userRouter.get("/user",async(req,res)=>{
+userRouter.get("/",async(req,res)=>{
     try{
 
      const user = await userModel.find()
